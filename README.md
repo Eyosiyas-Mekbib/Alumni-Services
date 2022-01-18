@@ -11,7 +11,7 @@
 ```sh
 
   git clone https://github.com/Eyosiyas-Mekbib/Alumni-Services
-  cd Alumni-Services
+  cd Alumni-Services/front-end
   npm install
   npm start
 ```
