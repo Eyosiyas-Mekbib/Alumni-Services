@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --black: #161616;
+  --green: #bbdc2f;
+  --green-dark: #61b136;
+  --green-light: #e1eec7;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  src: url("./assets/@font-face/befa68745153478cdffc812d1bddc9b2.eot");
+  src: url("./assets/@font-face/befa68745153478cdffc812d1bddc9b2.woff") format("woff")
+}
+
 .App {
   text-align: center;
 }
@@ -34,5 +53,102 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 2rem;
+  font-family: 'Gabriela Stencil';
+}
+
+nav ul li{
+  display: flex;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: rgb(46, 46, 46);
+}
+
+.navbar{
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  margin: 5vh 0 2vh 0;
+}
+
+nav ul{
+  display: flex;
+  gap: 2.7em;
+}
+
+.hero {
+  display: flex;
+  margin-top: 4em;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Gabriela Stencil';
+  font-size: 8vw;
+  line-height: 0.9em;
+  margin: 5vh 0 0 0;
+}
+
+.header h4 {
+  margin: 0;
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+.img{
+  width: 65vw;
+  margin: -13vh 0 0 10vw;
+  padding-top: 2em;
+}
+
+@media only screen and (max-width: 576px) {
+  .logo {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 5vw;
+    font-family: 'Gabriela Stencil';
+    
+  }
+
+  h1 {
+    font-family: 'Gabriela Stencil';
+    font-size: 12vw;
+    line-height: 0.7em;
+    margin: 6vh 0 0 0 ;
+  }
+  
+  .header h4 {
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 400;
+  }
+
+  .img{
+    margin: -4vh 0 0 15vw;
+    padding: 0;
+    width: 80vw;
+  }
+
+  Nav{
+    display: none;
+    
+  }
+  
+  .navbar{
+    margin-bottom: 1.5em;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: left ;
+    margin: 0 0 0 0.3em;
   }
 }
