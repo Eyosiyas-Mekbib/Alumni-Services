@@ -9,10 +9,10 @@ function Navbar() {
       <a href="" className="logo">ALUMNI</a>
       <nav className=''>
           <ul>
-              <li>Home</li>
-              <li>Services</li>
-              <li>About</li>
-              <li>Faq</li>
+              <a href='#home'><li>Home</li></a>
+              <a href='#services'><li>Services</li></a>
+              <a href=''><li>About</li></a>
+              <a href=''><li>Faq</li></a>
           </ul>
       </nav>
     </div>
