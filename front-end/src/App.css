@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --black: #161616;
   --green: #bbdc2f;
@@ -71,6 +75,14 @@ nav ul li{
   color: rgb(46, 46, 46);
 }
 
+a {
+  text-decoration: none;
+}
+
+a li:hover {
+  color: var(--green-dark);
+}
+
 .navbar{
   display: flex;
   align-items: space-between;
@@ -106,6 +118,53 @@ h1 {
   width: 65vw;
   margin: -13vh 0 0 10vw;
   padding-top: 2em;
+}
+
+#services{
+  margin: 17vh 0 20vh 0;
+  
+}
+
+#services p {
+  margin: 0 0 7vh 0;
+  text-align: center;
+}
+
+#services div{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  align-self: center;
+  gap: 40px;
+
+  /* margin-top: 2em; */
+}
+
+#services h2{
+  font-family: 'Gabriela Stencil';
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.service {
+  display: flex;
+  /* background-color: rgb(184, 230, 173); */
+  width: 25%;
+  padding: 13vh 2vw 4vh 2vw;
+  align-self: left;
+  border-radius: 10px;
+  box-shadow: 0 0 4px #23462825;
+}
+
+.service h4 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: rgb(56, 56, 56);
 }
 
 @media only screen and (max-width: 576px) {
@@ -150,5 +209,42 @@ h1 {
     flex-direction: column;
     align-items: left ;
     margin: 0 0 0 0.3em;
+  }
+
+  #services h2{
+    font-family: 'Gabriela Stencil';
+    font-size: 1.5em;
+  }
+
+  .service {
+    display: flex;
+    /* background-color: rgb(184, 230, 173); */
+    width: 40%;
+    padding: 4vh 2vw 2vh 3vw;
+    align-self: left;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #23462825;
+  }
+
+  .service h4 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+  }
+
+  #services div{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 20px;
+  
+    /* margin-top: 2em; */
+  }
+  #services{
+    margin: 8vh 0 20vh 0;
   }
 }
