@@ -16,7 +16,7 @@ function Navbar() {
             <Link to="/services">Services</Link>
           </li>
           <li>
-            <Link to="/Admin">Admin</Link>
+            <Link to="/admin">Admin</Link>
           </li>
         </ul>
       </nav>

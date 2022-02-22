@@ -1,1 +1,4 @@
 Lib
+backend
+.gitignore
+.env

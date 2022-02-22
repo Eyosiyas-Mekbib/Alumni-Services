@@ -7,6 +7,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Admin from "./components/Admin";
+import RequestTable from "./components/RequestTable";
+import StudentTable from "./components/StudentTable";
+import RequestForm from "./components/RequestForm";
 
 function App() {
   return (
@@ -15,8 +18,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={ <Hero/>}/>
-          <Route path="/Services" element={<Services/>}/>
-          <Route path="/Admin" element={<Admin/>}/>      
+          <Route path="/services" element={<Services/>}/>
+          <Route path="/admin" element={<RequestTable/>}/>   
+          <Route path="/admin/requests" element={<RequestTable/>}/>   
+          <Route path="/admin/students" element={<StudentTable/>}/> 
+          <Route path="/services/officalTranscriptRequest" element={<RequestForm/>}/>   
         </Routes>
       </Container>
     </Router>
