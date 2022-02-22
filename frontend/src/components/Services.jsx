@@ -7,15 +7,16 @@ function Services() {
       <h2>Our Services</h2>
       <p>Lorem ipsum dolor, sit amet </p>
       <div style={{ justifyContent: "space-around" }}>
-        <Link to="/OfficalTranscriptRequest">
           <div className="service">
+          <Link to="/services/officalTranscriptRequest">
             <h4>
               Offical transcript
               <br />
               request
             </h4>
+
+            </Link>
           </div>
-        </Link>
         <div className="service">
           <h4>
             Offical transcript
